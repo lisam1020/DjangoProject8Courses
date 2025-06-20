@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cbvApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('courses/', views.CourseListView.as_view(), name='courses'),
+    path('courses/<int:pk>/', views.CourseDetailView.as_view(), name='course-detail'),
+    path('courses/create/', views.CourseCreateView.as_view(), name='course-create'),
+    path('courses/<int:pk>/update/', views.CourseUpdateView.as_view(), name='course-update'),
+    path('courses/<int:pk>/delete/', views.CourseDeleteView.as_view(), name='course-delete'),
 ]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Information</title>
+</head>
+<body>
+<h1>Course Information</h1>
+<table border="2">
+    <thead>
+    <th>Course Name</th>
+    <th>Course Price</th>
+    <th>Course Description</th>
+    <th>Course Instructor</th>
+    <th>Course Rating</th>
+    </thead>
+    {% for course in courses %}
+    <tr>
+        <td><a href="/courses/">{{ course.id }}</a></td>
+        <td>{{ course.name }}</td>
+        <td>{{ course.price }}</td>
+        <td>{{ course.description }}</td>
+        <td>{{ course.instructor }}</td>
+        <td>{{ course.rating }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br/><br/><br/>
+<a href="/create">Add Course</a>
+</body>
+</html>
