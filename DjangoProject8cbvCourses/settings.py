@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'DjangoProject8cbvCourses.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'HOST': 'student-db-instance9c0f83d.cibsfknyd6zy.us-east-2.rds.amazonaws.com',
+    'PORT': '5432',
+    'USER': 'll2025',
+    'PASSWORD': 'k1ttym30w',
+    'NAME': 'defaultdb',
+    'ENGINE': 'django.db.backends.postgresql'
+
     }
 }
 
