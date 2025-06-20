@@ -80,7 +80,7 @@ DATABASES = {
     'PORT': '5432',
     'USER': 'll2025',
     'PASSWORD': 'k1ttym30w',
-    'NAME': 'defaultdb',
+    'NAME': 'coursedb',
     'ENGINE': 'django.db.backends.postgresql'
 
     }
