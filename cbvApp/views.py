@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 # Create your views here.
 class CourseListView(ListView):
     model = Course
-    # defaulttemplate_name = 'course_detail.html'
+    # defaulttemplate_name = 'course_list.html'
     #default context_object_name = 'course_list.html'
 
 class CourseDetailView(DetailView):
@@ -17,14 +17,14 @@ class CourseDetailView(DetailView):
 class CourseCreateView(CreateView):
     model = Course
     fields = ['course_name','course_price','course_description','course_instructor','course_rating']
-    success_url = reverse_lazy('courses')
+    success_url = reverse_lazy('course')
 
 class CourseUpdateView(UpdateView):
     model = Course
     fields = ['course_name','course_price','course_description','course_instructor','course_rating']
-    success_url = reverse_lazy('courses')
+    success_url = reverse_lazy('course')
 
 class CourseDeleteView(DeleteView):
     model = Course
-    success_url = reverse_lazy('courses')
+    success_url = reverse_lazy('course')
     

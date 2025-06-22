@@ -8,13 +8,14 @@
 <h1>Course Information</h1>
 <table border="2">
     <thead>
+    <th>ID</th>
     <th>Course Name</th>
     <th>Course Price</th>
     <th>Course Description</th>
     <th>Course Instructor</th>
     <th>Course Rating</th>
     </thead>
-    {% for course in courses %}
+    {% for course in courses_list %}
     <tr>
         <td><a href="/courses/">{{ course.id }}</a></td>
         <td>{{ course.name }}</td>
