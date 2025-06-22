@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'DjangoProject8cbvCourses.wsgi.application'
 
 DATABASES = {
     'default': {
-    'HOST': 'student-db-instance9c0f83d.cibsfknyd6zy.us-east-2.rds.amazonaws.com',
-    'PORT': '5432',
+    'HOST': 'studentdbaf06711.cibsfknyd6zy.us-east-2.rds.amazonaws.com',
+    'PORT': '3306',
     'USER': 'll2025',
     'PASSWORD': 'k1ttym30w',
     'NAME': 'coursedb',
-    'ENGINE': 'django.db.backends.postgresql'
+    'ENGINE': 'django.db.backends.mysql'
 
     }
 }
